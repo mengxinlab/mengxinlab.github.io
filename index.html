@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en" data-theme-preference="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xin Meng | Medical AI · 3D Imaging · Trustworthy AI</title>
+  <meta name="description" content="Xin Meng is a medical AI researcher working on 3D medical imaging, multimodal learning, and trustworthy medical AI.">
+  <meta name="author" content="Xin Meng">
+  <meta name="theme-color" content="#ffffff" id="theme-color">
+  <meta property="og:title" content="Xin Meng | Medical AI · 3D Imaging · Trustworthy AI">
+  <meta property="og:description" content="Xin Meng is a medical AI researcher working on 3D medical imaging, multimodal learning, and trustworthy medical AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mengxinlab.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://mengxinlab.github.io/">
+  <link rel="icon" href="assets/avatar-placeholder.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      var preference = 'system';
+      try {
+        var saved = localStorage.getItem('theme-preference');
+        if (saved === 'light' || saved === 'dark') preference = saved;
+      } catch (error) {}
+      document.documentElement.dataset.themePreference = preference;
+      if (preference !== 'system') document.documentElement.dataset.theme = preference;
+      var dark = preference === 'dark' || (preference === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.getElementById('theme-color').setAttribute('content', dark ? '#111315' : '#ffffff');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-menu-open="false">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Xin Meng, home">
+        <span>Xin Meng</span><span class="brand-cn" lang="zh-CN">/ 孟昕</span>
+      </a>
+
+      <nav class="nav-menu" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#selected-work">Selected Work</a>
+        <a href="#about">About</a>
+        <a href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Theme: system. Switch to light theme" title="Theme: system">
+          <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="5" width="17" height="12" rx="1.5"></rect>
+            <path d="M8.5 20h7M12 17v3"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5"></circle>
+            <path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.3 5.3 3.9 3.9M20.1 20.1l-1.4-1.4M18.7 5.3l1.4-1.4M3.9 20.1l1.4-1.4"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8a8.5 8.5 0 1 0 11.4 11.4Z"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Xin Meng <span lang="zh-CN">/ 孟昕</span></h1>
+          <p class="hero-role">Medical AI Researcher</p>
+          <p class="hero-institution">China Medical University</p>
+          <p class="research-identity">3D Medical Imaging <span>·</span> Multimodal AI <span>·</span> Trustworthy AI</p>
+          <p class="hero-statement">Building reliable medical AI under real-world distribution shifts.</p>
+          <p class="phd-status"><span class="status-mark" aria-hidden="true"></span>Exploring PhD opportunities for 2027</p>
+
+          <div class="hero-actions" aria-label="Academic profiles and documents">
+            <a class="action-link action-link-primary" href="mailto:mengxinlab@gmail.com">Email</a>
+            <a class="action-link" href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a>
+            <a class="action-link" href="https://github.com/mengxinlab" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <button class="action-link is-unavailable" type="button" disabled data-placeholder="TODO_SCHOLAR">Scholar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section section-shell" id="selected-work" aria-labelledby="selected-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Current and recent work</p>
+          <h2 id="selected-title">Selected Research</h2>
+        </div>
+        <p>Research projects, manuscripts, and presentations selected to represent my current direction.</p>
+      </div>
+
+      <div class="research-list">
+        <article class="research-card">
+          <div class="research-teaser teaser-registration" role="img" aria-label="Schematic of longitudinal image registration with an auditable update budget">
+            <svg viewBox="0 0 320 210" aria-hidden="true">
+              <g class="teaser-grid">
+                <path d="M20 42h280M20 84h280M20 126h280M20 168h280M64 20v170M108 20v170M152 20v170M196 20v170M240 20v170"></path>
+              </g>
+              <g class="scan-shape scan-shape-a">
+                <path d="M71 54c-23 8-35 31-29 57 6 27 22 45 46 45 25 0 40-17 43-43 3-28-8-48-31-58-9-4-19-4-29-1Z"></path>
+                <path d="M79 71c-13 9-20 23-17 38 3 17 12 27 27 29 15 1 24-9 26-27 2-17-4-30-16-38-6-4-13-5-20-2Z"></path>
+              </g>
+              <g class="scan-shape scan-shape-b">
+                <path d="M220 50c-24 7-38 29-34 56 4 28 19 47 43 49 25 2 41-15 46-41 5-28-5-49-27-60-9-5-18-6-28-4Z"></path>
+                <path d="M226 69c-14 8-22 21-20 37 2 17 11 29 25 31 15 2 25-7 28-25 3-17-2-30-14-39-6-4-12-6-19-4Z"></path>
+              </g>
+              <path class="teaser-arrow" d="M135 101h43m-10-10 10 10-10 10"></path>
+              <rect class="budget-box" x="137" y="126" width="43" height="25" rx="3"></rect>
+              <text x="158.5" y="142" text-anchor="middle">B</text>
+              <path class="risk-line" d="M35 181c30-8 39-22 60-16s32 15 52 1 34-18 52-4 40 13 83-4"></path>
+              <circle class="risk-dot" cx="199" cy="162" r="4"></circle>
+            </svg>
+            <span class="teaser-label">Update budget audit</span>
+          </div>
+          <div class="research-content">
+            <div class="research-meta">
+              <span class="badge badge-oral">Oral Presentation</span>
+              <span>32nd Chinese Medical Association Conference on Medical Informatics · 2026</span>
+            </div>
+            <h3>Auditing Benefit–Risk Trade-offs of Test-Time Update Budgets in Longitudinal Medical Image Registration</h3>
+            <p class="chinese-title" lang="zh-CN">纵向医学影像配准中测试时更新预算的收益-风险审计：以 GrowthMamba 为例</p>
+            <p>We investigate whether test-time model updates are always beneficial for longitudinal medical image registration. The study jointly audits similarity gains and topology risks under distribution shift, comparing frozen inference with different test-time update budgets.</p>
+            <p class="key-idea"><strong>Key idea.</strong> Test-time adaptation should be treated as an auditable candidate action rather than a default deployment behavior.</p>
+            <ul class="tag-list" aria-label="Research topics">
+              <li>3D Registration</li>
+              <li>Test-Time Adaptation</li>
+              <li>Distribution Shift</li>
+              <li>Reliability Auditing</li>
+            </ul>
+            <div class="resource-links" aria-label="Research resources">
+              <span class="resource-link is-coming" data-file-link="files/growthmamba-paper.pdf" data-link-label="Paper">Paper <small>Coming soon</small></span>
+              <span class="resource-link is-coming" data-file-link="files/growthmamba-slides.pdf" data-link-label="Slides">Slides <small>Coming soon</small></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="research-teaser teaser-failures" role="img" aria-label="Schematic of multiple models converging on shared and model-specific failure patterns">
+            <svg viewBox="0 0 320 210" aria-hidden="true">
+              <g class="model-nodes">
+                <rect x="28" y="32" width="64" height="38" rx="4"></rect>
+                <rect x="28" y="86" width="64" height="38" rx="4"></rect>
+                <rect x="28" y="140" width="64" height="38" rx="4"></rect>
+              </g>
+              <g class="model-lines">
+                <path d="M42 51h36M42 105h36M42 159h36"></path>
+                <path d="M92 51c48 0 49 39 86 48M92 105h86M92 159c48 0 49-39 86-48"></path>
+              </g>
+              <g class="failure-matrix">
+                <rect x="180" y="57" width="112" height="96" rx="5"></rect>
+                <path d="M208 57v96M236 57v96M264 57v96M180 81h112M180 105h112M180 129h112"></path>
+              </g>
+              <g class="failure-cells">
+                <rect x="183" y="84" width="22" height="18" rx="2"></rect>
+                <rect x="211" y="84" width="22" height="18" rx="2"></rect>
+                <rect x="239" y="84" width="22" height="18" rx="2"></rect>
+                <rect x="267" y="84" width="22" height="18" rx="2"></rect>
+                <rect x="211" y="108" width="22" height="18" rx="2"></rect>
+                <rect x="239" y="132" width="22" height="18" rx="2"></rect>
+              </g>
+              <text x="60" y="56" text-anchor="middle">M1</text>
+              <text x="60" y="110" text-anchor="middle">M2</text>
+              <text x="60" y="164" text-anchor="middle">M3</text>
+            </svg>
+            <span class="teaser-label">Failure pattern mining</span>
+          </div>
+          <div class="research-content">
+            <div class="research-meta">
+              <span class="badge badge-manuscript">Research Manuscript</span>
+              <span>Reliability auditing · 3D lung CT</span>
+            </div>
+            <h3>Mining Multi-Model Failure Patterns for Reliability Auditing of 3D Lung Nodule Malignancy Predictors</h3>
+            <p>A reliability auditing framework for identifying shared and model-specific failure patterns across 3D lung nodule malignancy predictors. The work focuses on understanding where medical imaging models fail together and how these systematic failure modes can inform safer model deployment.</p>
+            <ul class="tag-list" aria-label="Research topics">
+              <li>3D CT</li>
+              <li>Lung Nodules</li>
+              <li>Failure Analysis</li>
+              <li>Reliable Medical AI</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="research-teaser teaser-multimodal" role="img" aria-label="Schematic of imaging, clinical data, and knowledge being combined for multimodal assessment">
+            <svg viewBox="0 0 320 210" aria-hidden="true">
+              <g class="source-nodes">
+                <rect x="24" y="25" width="75" height="42" rx="4"></rect>
+                <rect x="24" y="84" width="75" height="42" rx="4"></rect>
+                <rect x="24" y="143" width="75" height="42" rx="4"></rect>
+              </g>
+              <g class="source-symbols">
+                <circle cx="61" cy="46" r="12"></circle>
+                <path d="M45 97h32M45 105h39M45 113h24"></path>
+                <circle cx="48" cy="164" r="4"></circle>
+                <circle cx="75" cy="156" r="4"></circle>
+                <circle cx="78" cy="175" r="4"></circle>
+                <path d="M52 162l19-5M52 166l22 8M76 160l2 11"></path>
+              </g>
+              <g class="fusion-lines">
+                <path d="M99 46c45 0 48 38 80 51M99 105h80M99 164c45 0 48-38 80-51"></path>
+              </g>
+              <circle class="fusion-node" cx="195" cy="105" r="26"></circle>
+              <path class="fusion-mark" d="M183 105h24M195 93v24"></path>
+              <path class="out-arrow" d="M221 105h39m-10-10 10 10-10 10"></path>
+              <rect class="out-box" x="261" y="75" width="38" height="60" rx="4"></rect>
+              <path class="out-bars" d="M272 117V99M280 117V88M288 117v-12"></path>
+            </svg>
+            <span class="teaser-label">Multimodal evidence fusion</span>
+          </div>
+          <div class="research-content">
+            <div class="research-meta">
+              <span class="badge badge-ongoing">Ongoing Research</span>
+              <span>Multimodal lung nodule assessment</span>
+            </div>
+            <h3>Multimodal Medical AI for Lung Nodule Assessment</h3>
+            <p>Exploring multimodal fusion of 3D imaging, structured imaging findings, clinical variables, and medical knowledge for lung nodule assessment. The project investigates vision-language models, structured clinical representations, and retrieval-augmented medical reasoning.</p>
+            <ul class="tag-list" aria-label="Research topics">
+              <li>3D Imaging</li>
+              <li>Multimodal AI</li>
+              <li>Vision-Language Models</li>
+              <li>Clinical Data</li>
+              <li>RAG</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="question-callout section-shell" aria-labelledby="question-title">
+      <div class="question-inner">
+        <p class="section-kicker">Research Question</p>
+        <h2 id="question-title">How can medical AI systems remain reliable <span>when the deployment environment differs from training?</span></h2>
+        <ul>
+          <li>When should a model adapt at test time?</li>
+          <li>How can systematic failure modes be identified before deployment?</li>
+          <li>How can multimodal evidence improve medical AI without introducing new failure modes?</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="site-section section-shell" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Research interests</p>
+          <h2 id="research-title">Research</h2>
+        </div>
+        <p>I study reliable learning systems for medical imaging, with an emphasis on behavior beyond the training distribution.</p>
+      </div>
+
+      <div class="interest-list">
+        <article class="interest-item">
+          <span class="interest-number">01</span>
+          <div>
+            <h3>3D Medical Imaging</h3>
+            <p>Learning representations from volumetric medical data for registration and assessment, with attention to generalization across clinical settings.</p>
+            <ul class="keyword-list">
+              <li>Lung CT</li>
+              <li>Medical image registration</li>
+              <li>3D representation learning</li>
+              <li>Domain generalization</li>
+            </ul>
+          </div>
+        </article>
+        <article class="interest-item">
+          <span class="interest-number">02</span>
+          <div>
+            <h3>Multimodal Medical AI</h3>
+            <p>Combining imaging, clinical variables, and medical knowledge to support more context-aware medical AI systems.</p>
+            <ul class="keyword-list">
+              <li>Vision-language models</li>
+              <li>Clinical data fusion</li>
+              <li>Retrieval-augmented generation</li>
+              <li>Structured clinical knowledge</li>
+            </ul>
+          </div>
+        </article>
+        <article class="interest-item">
+          <span class="interest-number">03</span>
+          <div>
+            <h3>Trustworthy Medical AI</h3>
+            <p>Auditing when models fail, how adaptation changes risk, and whether deployment decisions remain reliable under distribution shift.</p>
+            <ul class="keyword-list">
+              <li>Failure analysis</li>
+              <li>Distribution shift</li>
+              <li>Test-time adaptation</li>
+              <li>Reliability auditing</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="site-section section-shell news-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="section-kicker">Updates</p>
+          <h2 id="news-title">News</h2>
+        </div>
+      </div>
+      <ol class="news-list">
+        <li>
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <p>Oral presentation accepted at the 32nd Chinese Medical Association Conference on Medical Informatics.</p>
+            <p class="news-detail">Auditing Benefit–Risk Trade-offs of Test-Time Update Budgets in Longitudinal Medical Image Registration</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <p>Popular science / youth group presentation at the Chinese Medical Association Conference on Medical Informatics.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026">2026</time>
+          <div>
+            <p>Working on reliability auditing of 3D lung nodule malignancy predictors.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="more-note">More news will be added.</p>
+    </section>
+
+    <section class="site-section section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Background</p>
+          <h2 id="about-title">About</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a master's student at China Medical University working at the intersection of medical imaging and artificial intelligence.</p>
+          <p>My research focuses on 3D medical imaging, multimodal medical AI, and model reliability, with particular interest in distribution shift, failure auditing, and trustworthy deployment.</p>
+          <p>Before graduate school, I studied at Jilin University.</p>
+          <p>I am currently preparing for PhD applications for 2027 and hope to continue working on medical imaging, multimodal learning, and trustworthy medical AI.</p>
+        </div>
+        <div class="education-block">
+          <h3>Education</h3>
+          <ol class="education-list">
+            <li>
+              <span class="education-dot" aria-hidden="true"></span>
+              <div>
+                <div class="education-topline">
+                  <strong>China Medical University</strong>
+                  <time datetime="2026">Expected 2026</time>
+                </div>
+                <p>Master's degree · Library and Information Science / Medical Informatics</p>
+                <p class="education-focus">Research focus: Medical Artificial Intelligence</p>
+              </div>
+            </li>
+            <li>
+              <span class="education-dot" aria-hidden="true"></span>
+              <div>
+                <div class="education-topline">
+                  <strong>Jilin University</strong>
+                </div>
+                <p>Undergraduate study · Archival / Information Management</p>
+                <p class="education-focus">International Economics and Trade</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section section-shell contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div class="contact-intro">
+          <p class="section-kicker">Academic contact</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>I am always happy to discuss medical AI, research collaboration, and potential PhD opportunities.</p>
+          <p class="contact-name">Xin Meng <span lang="zh-CN">/ 孟昕</span></p>
+        </div>
+        <div class="contact-details">
+          <dl>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:mengxinlab@gmail.com">mengxinlab@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Google Scholar</dt>
+              <dd><span class="contact-unavailable" data-placeholder="TODO_SCHOLAR">Coming soon</span></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/mengxinlab" target="_blank" rel="noopener noreferrer">github.com/mengxinlab</a></dd>
+            </div>
+            <div>
+              <dt>ORCID</dt>
+              <dd><a href="https://orcid.org/0000-0003-3451-2373" target="_blank" rel="noopener noreferrer">0000-0003-3451-2373</a></dd>
+            </div>
+          </dl>
+          <div class="contact-actions">
+            <button class="action-link action-link-primary" id="copy-email" type="button" data-email="mengxinlab@gmail.com">Copy Email</button>
+            <a class="action-link" href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↗</span></a>
+            <button class="action-link action-link-secondary" id="wechat-open" type="button" aria-haspopup="dialog" aria-controls="wechat-modal">Show WeChat QR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div>
+        <p>Xin Meng · Medical AI</p>
+        <p>3D Medical Imaging · Multimodal AI · Trustworthy AI</p>
+      </div>
+      <div class="footer-meta">
+        <p>Last updated · 2026</p>
+        <p>GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="wechat-modal" id="wechat-modal" aria-labelledby="wechat-title" aria-describedby="wechat-description">
+    <div class="modal-content">
+      <button class="modal-close" id="wechat-close" type="button" aria-label="Close WeChat QR dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+      </button>
+      <p class="section-kicker">WeChat</p>
+      <h2 id="wechat-title">Connect on WeChat</h2>
+      <p id="wechat-description">Scan the QR code to connect with Xin Meng.</p>
+      <div class="qr-frame">
+        <img id="wechat-qr-image" src="assets/wechat-qr.png" alt="Xin Meng's WeChat QR code" width="720" height="720" hidden>
+        <p id="wechat-qr-placeholder">WeChat QR code will be added here.</p>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
