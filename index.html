@@ -41,10 +41,10 @@
       </a>
 
       <nav class="nav-menu" id="primary-navigation" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#news">News</a>
         <a href="#selected-work">Selected Work</a>
+        <a href="#research">Research</a>
         <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -87,7 +87,7 @@
             <a class="action-link action-link-primary" href="mailto:mengxinlab@gmail.com">Email</a>
             <a class="action-link" href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a>
             <a class="action-link" href="https://github.com/mengxinlab" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-            <button class="action-link is-unavailable" type="button" disabled data-placeholder="TODO_SCHOLAR">Scholar</button>
+            <button class="action-link action-link-secondary" type="button" data-wechat-open aria-haspopup="dialog" aria-controls="wechat-modal">WeChat</button>
           </div>
         </div>
       </div>
@@ -266,18 +266,6 @@
       </div>
     </section>
 
-    <aside class="question-callout section-shell" aria-labelledby="question-title">
-      <div class="question-inner">
-        <p class="section-kicker">Research Question</p>
-        <h2 id="question-title">How can medical AI systems remain reliable <span>when the deployment environment differs from training?</span></h2>
-        <ul>
-          <li>When should a model adapt at test time?</li>
-          <li>How can systematic failure modes be identified before deployment?</li>
-          <li>How can multimodal evidence improve medical AI without introducing new failure modes?</li>
-        </ul>
-      </div>
-    </aside>
-
     <section class="site-section section-shell" id="research" aria-labelledby="research-title">
       <div class="section-heading">
         <div>
@@ -285,6 +273,16 @@
           <h2 id="research-title">Research</h2>
         </div>
         <p>I study reliable learning systems for medical imaging, with an emphasis on behavior beyond the training distribution.</p>
+      </div>
+
+      <div class="research-question" aria-labelledby="question-title">
+        <p class="section-kicker">Research Question</p>
+        <h3 id="question-title">How can medical AI systems remain reliable <span>when the deployment environment differs from training?</span></h3>
+        <ul>
+          <li>When should a model adapt at test time?</li>
+          <li>How can systematic failure modes be identified before deployment?</li>
+          <li>How can multimodal evidence improve medical AI without introducing new failure modes?</li>
+        </ul>
       </div>
 
       <div class="interest-list">
@@ -330,37 +328,6 @@
       </div>
     </section>
 
-    <section class="site-section section-shell news-section" id="news" aria-labelledby="news-title">
-      <div class="section-heading compact-heading">
-        <div>
-          <p class="section-kicker">Updates</p>
-          <h2 id="news-title">News</h2>
-        </div>
-      </div>
-      <ol class="news-list">
-        <li>
-          <time datetime="2026-09">Sep 2026</time>
-          <div>
-            <p>Oral presentation accepted at the 32nd Chinese Medical Association Conference on Medical Informatics.</p>
-            <p class="news-detail">Auditing Benefit–Risk Trade-offs of Test-Time Update Budgets in Longitudinal Medical Image Registration</p>
-          </div>
-        </li>
-        <li>
-          <time datetime="2026-09">Sep 2026</time>
-          <div>
-            <p>Popular science / youth group presentation at the Chinese Medical Association Conference on Medical Informatics.</p>
-          </div>
-        </li>
-        <li>
-          <time datetime="2026">2026</time>
-          <div>
-            <p>Working on reliability auditing of 3D lung nodule malignancy predictors.</p>
-          </div>
-        </li>
-      </ol>
-      <p class="more-note">More news will be added.</p>
-    </section>
-
     <section class="site-section section-shell" id="about" aria-labelledby="about-title">
       <div class="section-heading">
         <div>
@@ -404,6 +371,37 @@
       </div>
     </section>
 
+    <section class="site-section section-shell news-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="section-kicker">Updates</p>
+          <h2 id="news-title">News</h2>
+        </div>
+      </div>
+      <ol class="news-list">
+        <li>
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <p>Oral presentation accepted at the 32nd Chinese Medical Association Conference on Medical Informatics.</p>
+            <p class="news-detail">Auditing Benefit–Risk Trade-offs of Test-Time Update Budgets in Longitudinal Medical Image Registration</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <p>Popular science / youth group presentation at the Chinese Medical Association Conference on Medical Informatics.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026">2026</time>
+          <div>
+            <p>Working on reliability auditing of 3D lung nodule malignancy predictors.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="more-note">More news will be added.</p>
+    </section>
+
     <section class="site-section section-shell contact-section" id="contact" aria-labelledby="contact-title">
       <div class="contact-panel">
         <div class="contact-intro">
@@ -419,10 +417,6 @@
               <dd><a href="mailto:mengxinlab@gmail.com">mengxinlab@gmail.com</a></dd>
             </div>
             <div>
-              <dt>Google Scholar</dt>
-              <dd><span class="contact-unavailable" data-placeholder="TODO_SCHOLAR">Coming soon</span></dd>
-            </div>
-            <div>
               <dt>GitHub</dt>
               <dd><a href="https://github.com/mengxinlab" target="_blank" rel="noopener noreferrer">github.com/mengxinlab</a></dd>
             </div>
@@ -434,7 +428,7 @@
           <div class="contact-actions">
             <button class="action-link action-link-primary" id="copy-email" type="button" data-email="mengxinlab@gmail.com">Copy Email</button>
             <a class="action-link" href="files/Xin_Meng_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↗</span></a>
-            <button class="action-link action-link-secondary" id="wechat-open" type="button" aria-haspopup="dialog" aria-controls="wechat-modal">Show WeChat QR</button>
+            <button class="action-link action-link-secondary" type="button" data-wechat-open aria-haspopup="dialog" aria-controls="wechat-modal">Show WeChat QR</button>
           </div>
         </div>
       </div>
@@ -463,7 +457,7 @@
       <h2 id="wechat-title">Connect on WeChat</h2>
       <p id="wechat-description">Scan the QR code to connect with Xin Meng.</p>
       <div class="qr-frame">
-        <img id="wechat-qr-image" src="assets/wechat-qr.png" alt="Xin Meng's WeChat QR code" width="720" height="720" hidden>
+        <img id="wechat-qr-image" src="assets/wechat-qr.png" alt="Xin Meng's WeChat QR code" width="640" height="640" hidden>
         <p id="wechat-qr-placeholder">WeChat QR code will be added here.</p>
       </div>
     </div>

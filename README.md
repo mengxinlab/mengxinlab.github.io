@@ -104,9 +104,7 @@ The `.nojekyll` marker tells GitHub Pages to serve the static files directly.
 
 ## TODO checklist
 
-- [ ] Replace `TODO_SCHOLAR` with the Google Scholar URL in `index.html`.
-- [ ] Add `assets/wechat-qr.png`.
-- [ ] Add `files/Xin_Meng_CV.pdf`.
+- [ ] `TODO_SCHOLAR`: Add the Google Scholar profile when it is ready.
 - [ ] Add `files/growthmamba-paper.pdf`.
 - [ ] Add `files/growthmamba-slides.pdf`.
 

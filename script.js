@@ -143,10 +143,11 @@
 
   /* WeChat modal */
   var modal = document.getElementById('wechat-modal');
-  var openModalButton = document.getElementById('wechat-open');
+  var openModalButtons = document.querySelectorAll('[data-wechat-open]');
   var closeModalButton = document.getElementById('wechat-close');
   var qrImage = document.getElementById('wechat-qr-image');
   var qrPlaceholder = document.getElementById('wechat-qr-placeholder');
+  var lastModalTrigger = null;
 
   var qrProbe = new Image();
   qrProbe.onload = function () {
@@ -155,11 +156,14 @@
   };
   qrProbe.src = qrImage.getAttribute('src');
 
-  openModalButton.addEventListener('click', function () {
-    if (typeof modal.showModal === 'function') {
-      modal.showModal();
-      closeModalButton.focus();
-    }
+  openModalButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      lastModalTrigger = button;
+      if (typeof modal.showModal === 'function') {
+        modal.showModal();
+        closeModalButton.focus();
+      }
+    });
   });
 
   closeModalButton.addEventListener('click', function () {
@@ -173,7 +177,7 @@
   });
 
   modal.addEventListener('close', function () {
-    openModalButton.focus();
+    if (lastModalTrigger) lastModalTrigger.focus();
   });
 
   document.addEventListener('keydown', function (event) {

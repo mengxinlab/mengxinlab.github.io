@@ -12,10 +12,10 @@ The homepage currently uses a text-first Hero and intentionally displays no prof
 
 ## WeChat QR code
 
-Add the QR image as:
+The cropped QR image is stored as:
 
 `assets/wechat-qr.png`
 
-The modal automatically displays the image when it exists. Until then, it shows a clean fallback message.
+The Hero and Contact buttons open the same accessible modal. If the image is removed, the modal falls back to a clean placeholder message.
 
 Do not commit private or temporary images to a public repository.
