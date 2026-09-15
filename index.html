@@ -106,24 +106,35 @@
         <article class="research-card">
           <div class="research-teaser teaser-registration" role="img" aria-label="Schematic of longitudinal image registration with an auditable update budget">
             <svg viewBox="0 0 320 210" aria-hidden="true">
-              <g class="teaser-grid">
-                <path d="M20 42h280M20 84h280M20 126h280M20 168h280M64 20v170M108 20v170M152 20v170M196 20v170M240 20v170"></path>
+              <g class="figure-volume">
+                <rect class="figure-panel-muted" x="22" y="57" width="68" height="68" rx="4"></rect>
+                <rect class="figure-panel" x="28" y="51" width="68" height="68" rx="4"></rect>
+                <ellipse class="figure-contour" cx="62" cy="85" rx="23" ry="26"></ellipse>
+                <path class="figure-contour figure-line-muted" d="M46 87c7-13 23-19 32-6 7 10 0 25-13 27-12 2-24-9-19-21Z"></path>
+                <circle class="figure-risk-fill" cx="73" cy="76" r="4"></circle>
               </g>
-              <g class="scan-shape scan-shape-a">
-                <path d="M71 54c-23 8-35 31-29 57 6 27 22 45 46 45 25 0 40-17 43-43 3-28-8-48-31-58-9-4-19-4-29-1Z"></path>
-                <path d="M79 71c-13 9-20 23-17 38 3 17 12 27 27 29 15 1 24-9 26-27 2-17-4-30-16-38-6-4-13-5-20-2Z"></path>
+              <text class="figure-text-muted" x="62" y="141" text-anchor="middle">longitudinal CT</text>
+              <path class="figure-arrow" d="M102 84h27m-7-6 7 6-7 6"></path>
+              <g>
+                <rect class="figure-panel" x="138" y="61" width="48" height="48" rx="5"></rect>
+                <text class="figure-text-strong" x="162" y="81" text-anchor="middle">TTA</text>
+                <text class="figure-text-muted" x="162" y="96" text-anchor="middle">budget b</text>
               </g>
-              <g class="scan-shape scan-shape-b">
-                <path d="M220 50c-24 7-38 29-34 56 4 28 19 47 43 49 25 2 41-15 46-41 5-28-5-49-27-60-9-5-18-6-28-4Z"></path>
-                <path d="M226 69c-14 8-22 21-20 37 2 17 11 29 25 31 15 2 25-7 28-25 3-17-2-30-14-39-6-4-12-6-19-4Z"></path>
+              <path class="figure-arrow" d="M192 84h19m-7-6 7 6-7 6"></path>
+              <g class="figure-chart">
+                <path class="figure-axis" d="M218 137V45M218 137h82"></path>
+                <path class="figure-benefit-line" d="M221 124c14-19 31-32 48-38 12-4 21-6 29-7"></path>
+                <path class="figure-risk-line" d="M221 131c19-1 34-5 44-15 11-11 20-34 33-60"></path>
+                <path class="figure-threshold" d="M265 51v86"></path>
+                <circle class="figure-accent-fill" cx="265" cy="88" r="3.5"></circle>
+                <circle class="figure-risk-fill" cx="265" cy="116" r="3.5"></circle>
+                <text class="figure-text figure-benefit-text" x="295" y="75" text-anchor="end">benefit</text>
+                <text class="figure-text figure-risk-text" x="295" y="52" text-anchor="end">risk</text>
+                <text class="figure-text-muted" x="218" y="151">b=0</text>
+                <text class="figure-text-muted" x="300" y="151" text-anchor="end">update budget</text>
               </g>
-              <path class="teaser-arrow" d="M135 101h43m-10-10 10 10-10 10"></path>
-              <rect class="budget-box" x="137" y="126" width="43" height="25" rx="3"></rect>
-              <text x="158.5" y="142" text-anchor="middle">B</text>
-              <path class="risk-line" d="M35 181c30-8 39-22 60-16s32 15 52 1 34-18 52-4 40 13 83-4"></path>
-              <circle class="risk-dot" cx="199" cy="162" r="4"></circle>
             </svg>
-            <span class="teaser-label">Update budget audit</span>
+            <span class="teaser-label">Test-time update auditing</span>
           </div>
           <div class="research-content">
             <div class="research-meta">
@@ -150,32 +161,40 @@
         <article class="research-card">
           <div class="research-teaser teaser-failures" role="img" aria-label="Schematic of multiple models converging on shared and model-specific failure patterns">
             <svg viewBox="0 0 320 210" aria-hidden="true">
-              <g class="model-nodes">
-                <rect x="28" y="32" width="64" height="38" rx="4"></rect>
-                <rect x="28" y="86" width="64" height="38" rx="4"></rect>
-                <rect x="28" y="140" width="64" height="38" rx="4"></rect>
+              <text class="figure-text-muted" x="180" y="28" text-anchor="middle">failed cases →</text>
+              <g class="figure-model-labels">
+                <rect class="figure-panel" x="24" y="43" width="58" height="30" rx="4"></rect>
+                <rect class="figure-panel" x="24" y="85" width="58" height="30" rx="4"></rect>
+                <rect class="figure-panel" x="24" y="127" width="58" height="30" rx="4"></rect>
+                <text class="figure-text-strong" x="53" y="62" text-anchor="middle">Model 1</text>
+                <text class="figure-text-strong" x="53" y="104" text-anchor="middle">Model 2</text>
+                <text class="figure-text-strong" x="53" y="146" text-anchor="middle">Model 3</text>
               </g>
-              <g class="model-lines">
-                <path d="M42 51h36M42 105h36M42 159h36"></path>
-                <path d="M92 51c48 0 49 39 86 48M92 105h86M92 159c48 0 49-39 86-48"></path>
+              <g class="figure-connectors">
+                <path d="M82 58h25M82 100h25M82 142h25"></path>
               </g>
-              <g class="failure-matrix">
-                <rect x="180" y="57" width="112" height="96" rx="5"></rect>
-                <path d="M208 57v96M236 57v96M264 57v96M180 81h112M180 105h112M180 129h112"></path>
+              <g class="figure-matrix">
+                <rect class="figure-panel" x="107" y="39" width="168" height="122" rx="5"></rect>
+                <path class="figure-grid-line" d="M135 39v122M163 39v122M191 39v122M219 39v122M247 39v122M107 79.7h168M107 120.3h168"></path>
               </g>
               <g class="failure-cells">
-                <rect x="183" y="84" width="22" height="18" rx="2"></rect>
-                <rect x="211" y="84" width="22" height="18" rx="2"></rect>
-                <rect x="239" y="84" width="22" height="18" rx="2"></rect>
-                <rect x="267" y="84" width="22" height="18" rx="2"></rect>
-                <rect x="211" y="108" width="22" height="18" rx="2"></rect>
-                <rect x="239" y="132" width="22" height="18" rx="2"></rect>
+                <rect class="figure-accent-fill" x="111" y="44" width="20" height="30" rx="2"></rect>
+                <rect class="figure-accent-fill" x="111" y="85" width="20" height="30" rx="2"></rect>
+                <rect class="figure-accent-fill" x="111" y="126" width="20" height="30" rx="2"></rect>
+                <rect class="figure-accent-soft" x="167" y="44" width="20" height="30" rx="2"></rect>
+                <rect class="figure-accent-soft" x="167" y="85" width="20" height="30" rx="2"></rect>
+                <rect class="figure-accent-soft" x="167" y="126" width="20" height="30" rx="2"></rect>
+                <rect class="figure-risk-fill" x="223" y="85" width="20" height="30" rx="2"></rect>
+                <rect class="figure-risk-soft" x="251" y="126" width="20" height="30" rx="2"></rect>
               </g>
-              <text x="60" y="56" text-anchor="middle">M1</text>
-              <text x="60" y="110" text-anchor="middle">M2</text>
-              <text x="60" y="164" text-anchor="middle">M3</text>
+              <g class="figure-legend">
+                <rect class="figure-accent-fill" x="107" y="165" width="10" height="10" rx="2"></rect>
+                <text class="figure-text-muted" x="123" y="174">shared failure</text>
+                <rect class="figure-risk-fill" x="207" y="165" width="10" height="10" rx="2"></rect>
+                <text class="figure-text-muted" x="223" y="174">model-specific</text>
+              </g>
             </svg>
-            <span class="teaser-label">Failure pattern mining</span>
+            <span class="teaser-label">Shared &amp; model-specific failures</span>
           </div>
           <div class="research-content">
             <div class="research-meta">
@@ -197,28 +216,36 @@
           <div class="research-teaser teaser-multimodal" role="img" aria-label="Schematic of imaging, clinical data, and knowledge being combined for multimodal assessment">
             <svg viewBox="0 0 320 210" aria-hidden="true">
               <g class="source-nodes">
-                <rect x="24" y="25" width="75" height="42" rx="4"></rect>
-                <rect x="24" y="84" width="75" height="42" rx="4"></rect>
-                <rect x="24" y="143" width="75" height="42" rx="4"></rect>
+                <rect class="figure-panel" x="16" y="24" width="80" height="27" rx="4"></rect>
+                <rect class="figure-panel" x="16" y="62" width="80" height="27" rx="4"></rect>
+                <rect class="figure-panel" x="16" y="100" width="80" height="27" rx="4"></rect>
+                <rect class="figure-panel" x="16" y="138" width="80" height="27" rx="4"></rect>
+                <text class="figure-text-strong" x="56" y="42" text-anchor="middle">3D CT</text>
+                <text class="figure-text-strong" x="56" y="80" text-anchor="middle">Findings</text>
+                <text class="figure-text-strong" x="56" y="118" text-anchor="middle">Clinical</text>
+                <text class="figure-text-strong" x="56" y="156" text-anchor="middle">Knowledge</text>
               </g>
-              <g class="source-symbols">
-                <circle cx="61" cy="46" r="12"></circle>
-                <path d="M45 97h32M45 105h39M45 113h24"></path>
-                <circle cx="48" cy="164" r="4"></circle>
-                <circle cx="75" cy="156" r="4"></circle>
-                <circle cx="78" cy="175" r="4"></circle>
-                <path d="M52 162l19-5M52 166l22 8M76 160l2 11"></path>
+              <g class="figure-fusion-connectors">
+                <path d="M96 37.5c22 0 27 29 45 43M96 75.5h45M96 113.5h45M96 151.5c22 0 27-29 45-43"></path>
               </g>
-              <g class="fusion-lines">
-                <path d="M99 46c45 0 48 38 80 51M99 105h80M99 164c45 0 48-38 80-51"></path>
+              <g class="figure-fusion-node">
+                <rect class="figure-accent-soft" x="142" y="57" width="72" height="94" rx="6"></rect>
+                <text class="figure-text-strong" x="178" y="82" text-anchor="middle">Evidence</text>
+                <text class="figure-text-strong" x="178" y="96" text-anchor="middle">fusion</text>
+                <path class="figure-divider" d="M157 107h42"></path>
+                <rect class="figure-panel" x="156" y="119" width="44" height="18" rx="3"></rect>
+                <text class="figure-text-muted" x="178" y="132" text-anchor="middle">VLM + RAG</text>
               </g>
-              <circle class="fusion-node" cx="195" cy="105" r="26"></circle>
-              <path class="fusion-mark" d="M183 105h24M195 93v24"></path>
-              <path class="out-arrow" d="M221 105h39m-10-10 10 10-10 10"></path>
-              <rect class="out-box" x="261" y="75" width="38" height="60" rx="4"></rect>
-              <path class="out-bars" d="M272 117V99M280 117V88M288 117v-12"></path>
+              <path class="figure-arrow" d="M218 104h22m-7-6 7 6-7 6"></path>
+              <g>
+                <rect class="figure-panel" x="246" y="72" width="60" height="64" rx="5"></rect>
+                <text class="figure-text-strong" x="276" y="91" text-anchor="middle">Nodule</text>
+                <text class="figure-text-strong" x="276" y="105" text-anchor="middle">assessment</text>
+                <path class="figure-score" d="M259 120h34"></path>
+                <circle class="figure-risk-fill" cx="284" cy="120" r="4"></circle>
+              </g>
             </svg>
-            <span class="teaser-label">Multimodal evidence fusion</span>
+            <span class="teaser-label">Multimodal lung nodule assessment</span>
           </div>
           <div class="research-content">
             <div class="research-meta">
