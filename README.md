@@ -28,7 +28,7 @@ Future project pages can be added under `projects/<project-name>/index.html` whi
 
 ### Name and biography
 
-Edit the hero and About sections in `index.html`. Search for `Xin Meng`, `Medical AI Researcher`, or the existing biography sentences to find the relevant content.
+Edit the hero and About sections in `index.html`. Search for `Xin Meng`, `MLIS Student`, or the existing biography sentences to find the relevant content.
 
 ### Light and dark colors
 
