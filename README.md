@@ -69,7 +69,7 @@ When present, the homepage automatically turns the corresponding â€œComing soonâ
 
 1. Copy one complete `<article class="research-card">` block in `index.html`.
 2. Replace its teaser, status, venue/year, title, description, tags, and available resources.
-3. Use truthful status labels such as `Research Manuscript`, `Ongoing Research`, `Poster`, or a confirmed venue status.
+3. Use truthful status labels such as `Manuscript`, `Ongoing Project`, `Poster`, or a confirmed venue status.
 4. Add only links that exist. External links must include `target="_blank"` and `rel="noopener noreferrer"`.
 5. Keep the title concise and the description to approximately two or three sentences.
 
