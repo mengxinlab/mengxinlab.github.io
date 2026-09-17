@@ -286,12 +286,14 @@ h3 {
 }
 
 /* Science communication */
+.scicomm-section > .section-heading,
 .scicomm-content {
+  width: 70%;
+  margin-inline: auto;
   color: var(--text-secondary);
 }
 
 .scicomm-copy {
-  max-width: 720px;
   margin-bottom: 24px;
 }
 
@@ -306,7 +308,7 @@ h3 {
 
 .scicomm-video {
   display: block;
-  width: 70%;
+  width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   background: var(--surface-secondary);
@@ -1401,7 +1403,8 @@ html[data-theme-preference="dark"] .theme-icon-dark {
     padding-inline: 0.17em;
   }
 
-  .scicomm-video {
+  .scicomm-section > .section-heading,
+  .scicomm-content {
     width: 100%;
   }
 
