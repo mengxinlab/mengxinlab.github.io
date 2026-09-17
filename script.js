@@ -126,21 +126,6 @@
     });
   });
 
-  /* Enable research PDF links only when the files are present. */
-  document.querySelectorAll('[data-file-link]').forEach(function (item) {
-    var path = item.dataset.fileLink;
-    fetch(path, { method: 'HEAD', cache: 'no-store' }).then(function (response) {
-      if (!response.ok) return;
-      var link = document.createElement('a');
-      link.className = 'resource-link';
-      link.href = path;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = item.dataset.linkLabel;
-      item.replaceWith(link);
-    }).catch(function () {});
-  });
-
   /* WeChat modal */
   var modal = document.getElementById('wechat-modal');
   var openModalButtons = document.querySelectorAll('[data-wechat-open]');
