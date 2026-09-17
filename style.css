@@ -286,15 +286,15 @@ h3 {
 }
 
 /* Science communication */
+.scicomm-section .section-heading {
+  align-items: start;
+}
+
 .scicomm-content {
   width: 100%;
   max-width: 720px;
   margin-inline: auto;
   color: var(--text-secondary);
-}
-
-.scicomm-copy {
-  margin-bottom: 24px;
 }
 
 .scicomm-copy strong {
