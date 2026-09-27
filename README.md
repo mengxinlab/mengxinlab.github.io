@@ -75,6 +75,10 @@ When present, the homepage automatically turns the corresponding â€œComing soonâ
 
 The card layout already supports future Paper, arXiv, Project Page, Code, Slides, and BibTeX links.
 
+### Maintain the full publications list
+
+The compact `Publications` section in `index.html` is the complete research-output list; the three visual cards above it remain the homepage selection. Keep the accepted, submitted/under-review, and revising-for-resubmission labels distinct. Update each entry's title, author order, contribution marks, and current status from the latest manuscript or decision record before publishing. The Chinese application CV links directly to `#publications`; if the list changes, update that CV's summary too.
+
 ## Theme behavior
 
 The theme control cycles through system, light, and dark. The first visit follows the operating-system preference. Manual light or dark choices are saved in `localStorage`; returning to system mode clears the saved override. A small inline script in the document head applies the preference before the stylesheet renders, preventing a wrong-theme flash.
