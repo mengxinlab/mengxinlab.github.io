@@ -1017,6 +1017,35 @@ html[data-theme-preference="dark"] .theme-icon-dark {
   font-weight: 650;
 }
 
+.publication-collapse > summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  font-weight: 650;
+  cursor: pointer;
+  list-style: none;
+}
+
+.publication-collapse > summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-collapse > summary::after {
+  content: "+";
+  flex: none;
+}
+
+.publication-collapse[open] > summary {
+  margin-bottom: 13px;
+}
+
+.publication-collapse[open] > summary::after {
+  content: "−";
+}
+
 .publication-list {
   margin: 0;
   padding: 0;
